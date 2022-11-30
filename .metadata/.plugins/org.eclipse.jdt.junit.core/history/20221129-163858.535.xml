@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestDemoTest" project="unit-test-assignment" tests="5" started="5" failures="0" errors="1" ignored="0">
+  <testsuite name="TestDemoTest" time="0.145" uniqueid="[engine:junit-jupiter]/[class:TestDemoTest]">
+    <testsuite name="assertThatTwoPositiveNumbersAreAddedCorrectly(TestDemoTest)" time="0.067" displayname="assertThatTwoPositiveNumbersAreAddedCorrectly(int, int, int, Boolean)" parameters="int,int,int,java.lang.Boolean" uniqueid="[engine:junit-jupiter]/[class:TestDemoTest]/[test-template:assertThatTwoPositiveNumbersAreAddedCorrectly(int, int, int, java.lang.Boolean)]">
+      <testcase name="assertThatTwoPositiveNumbersAreAddedCorrectly" classname="TestDemoTest" time="0.067" dynamicTest="true" displayname="[1] 2, 4, 6, false" parameters="int,int,int,java.lang.Boolean" uniqueid="[engine:junit-jupiter]/[class:TestDemoTest]/[test-template:assertThatTwoPositiveNumbersAreAddedCorrectly(int, int, int, java.lang.Boolean)]/[test-template-invocation:#1]"/>
+      <testcase name="assertThatTwoPositiveNumbersAreAddedCorrectly" classname="TestDemoTest" time="0.001" dynamicTest="true" displayname="[2] 10, 15, 25, false" parameters="int,int,int,java.lang.Boolean" uniqueid="[engine:junit-jupiter]/[class:TestDemoTest]/[test-template:assertThatTwoPositiveNumbersAreAddedCorrectly(int, int, int, java.lang.Boolean)]/[test-template-invocation:#2]"/>
+      <testcase name="assertThatTwoPositiveNumbersAreAddedCorrectly" classname="TestDemoTest" time="0.003" dynamicTest="true" displayname="[3] -5, -7, -12, true" parameters="int,int,int,java.lang.Boolean" uniqueid="[engine:junit-jupiter]/[class:TestDemoTest]/[test-template:assertThatTwoPositiveNumbersAreAddedCorrectly(int, int, int, java.lang.Boolean)]/[test-template-invocation:#3]"/>
+      <testcase name="assertThatTwoPositiveNumbersAreAddedCorrectly" classname="TestDemoTest" time="0.001" dynamicTest="true" displayname="[4] 0, 5, 5, true" parameters="int,int,int,java.lang.Boolean" uniqueid="[engine:junit-jupiter]/[class:TestDemoTest]/[test-template:assertThatTwoPositiveNumbersAreAddedCorrectly(int, int, int, java.lang.Boolean)]/[test-template-invocation:#4]"/>
+    </testsuite>
+    <testcase name="assertThatNumberSquaredIsCorrect" classname="TestDemoTest" time="0.069" displayname="assertThatNumberSquaredIsCorrect()" uniqueid="[engine:junit-jupiter]/[class:TestDemoTest]/[method:assertThatNumberSquaredIsCorrect()]">
+      <error>java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:84)&#13;
+	at jdk.proxy2/jdk.proxy2.$Proxy23.isTypeMockable(Unknown Source)&#13;
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:33)&#13;
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)&#13;
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:250)&#13;
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:232)&#13;
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:83)&#13;
+	at org.mockito.Mockito.spy(Mockito.java:2038)&#13;
+	at TestDemoTest.assertThatNumberSquaredIsCorrect(TestDemoTest.java:38)&#13;
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)&#13;
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)&#13;
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)&#13;
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)&#13;
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)&#13;
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)&#13;
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)&#13;
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)&#13;
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)&#13;
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)&#13;
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)&#13;
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)&#13;
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)&#13;
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)&#13;
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)&#13;
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:210)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:206)&#13;
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)&#13;
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)&#13;
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)&#13;
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)&#13;
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)&#13;
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)&#13;
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)&#13;
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:84)&#13;
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+Caused by: java.lang.IllegalStateException: Internal problem occurred, please report it. Mockito is unable to load the default implementation of class that is a part of Mockito distribution. Failed to load interface org.mockito.plugins.MockMaker&#13;
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:91)&#13;
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:64)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)&#13;
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:50)&#13;
+	at org.mockito.internal.configuration.plugins.PluginRegistry.&lt;init&gt;(PluginRegistry.java:26)&#13;
+	at org.mockito.internal.configuration.plugins.Plugins.&lt;clinit&gt;(Plugins.java:20)&#13;
+	at org.mockito.internal.util.MockUtil.&lt;clinit&gt;(MockUtil.java:28)&#13;
+	... 71 more&#13;
+Caused by: java.lang.reflect.InvocationTargetException&#13;
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:79)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)&#13;
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:89)&#13;
+	... 77 more&#13;
+Caused by: java.lang.ExceptionInInitializerError&#13;
+	at org.mockito.internal.exceptions.stacktrace.ConditionalStackTraceFilter.&lt;init&gt;(ConditionalStackTraceFilter.java:16)&#13;
+	at org.mockito.exceptions.base.MockitoException.filterStackTrace(MockitoException.java:41)&#13;
+	at org.mockito.exceptions.base.MockitoException.&lt;init&gt;(MockitoException.java:35)&#13;
+	at org.mockito.internal.creation.bytebuddy.SubclassInjectionLoader.&lt;init&gt;(SubclassInjectionLoader.java:36)&#13;
+	at org.mockito.internal.creation.bytebuddy.SubclassByteBuddyMockMaker.&lt;init&gt;(SubclassByteBuddyMockMaker.java:33)&#13;
+	at org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker.&lt;init&gt;(ByteBuddyMockMaker.java:30)&#13;
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)&#13;
+	... 80 more&#13;
+Caused by: java.lang.NullPointerException: Cannot invoke "org.mockito.internal.configuration.plugins.PluginRegistry.getStackTraceCleanerProvider()" because "org.mockito.internal.configuration.plugins.Plugins.registry" is null&#13;
+	at org.mockito.internal.configuration.plugins.Plugins.getStackTraceCleanerProvider(Plugins.java:26)&#13;
+	at org.mockito.internal.exceptions.stacktrace.StackTraceFilter.&lt;clinit&gt;(StackTraceFilter.java:20)&#13;
+	... 87 more&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

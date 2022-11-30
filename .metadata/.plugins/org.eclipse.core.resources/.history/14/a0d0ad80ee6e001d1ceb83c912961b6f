@@ -1,0 +1,26 @@
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+
+class TestDemoTest {
+	private TestDemo testDemo;
+	@BeforeEach
+	void setUp() throws Exception {
+		TestDemo testDemo = new TestDemo();
+	}
+
+	@ParameterizedTest
+	void assertThatTwoPositiveNumbersAreAddedCorrectly(int a, int b, int expected, Boolean expectException) {
+		if(!expectException) {
+			assertThat(testDemo.addPositive(a, b)).isEqualTo(expected);
+		}
+		else {
+			expectException = assertThatThrownBy() -> testDemo.addPositive(a,b).isInstanceOf(IllegalArgumentException.class);
+		}
+	}
+
+}
